@@ -35,11 +35,12 @@ body {
 	position: absolute;
 }
 
-.menu {
-	color: white;
-}
 .menu img {
 	margin-top: 7px;
+}
+
+.menu a{
+	color: white;
 }
 
 .menu li {
@@ -116,7 +117,6 @@ h3 {
 
 .hud-passeio h5 {
 	margin-top: 15px;
-	font-family: Playfair Display;
 	font-size: 32px;
 }
 
@@ -251,21 +251,37 @@ h3 {
 }
 
 .footer-area{
-	background-color: #04091e; 
-	
+	background-color: #04091e;
+	display: flex;
 }
 
 .footer-selection{
 	padding-bottom: 80px;
 }
 
-.footer-text{
+.footer-text {
 	color: #999999;
+	font-family: 'Roboto', sans-serif;
+	
 }
 
-.footer-text a{
+.footer-area a{
 	color: #999999;
-	
+	padding-left: 260%;
+}
+
+.footer-area li{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+
+.footer-area p{
+	margin-left: 5px;
+	padding-left: 250%;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 
 .footer-about{
