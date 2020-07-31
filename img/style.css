@@ -5,10 +5,15 @@
 	padding: 0;
 }
 
-body {
-	background-size: auto 100vh;
+html{
+	/* A cada 1 rem será considerado 10px */
+	font-size: 62.5%;
 }
 
+body {
+	background-size: auto 100vh;
+	font-size: 1.6rem;
+}
 
 .img-container {
 	width: 100%;
@@ -61,15 +66,15 @@ a {
 }
 
 .text-banner h1 {
-	font-size: 7em;
+	font-size: 13rem;
 }
 
 .text-banner h2 {
-	font-size: large;
+	font-size: 3rem;
 }
 
 h3 {
-	font-size: 48px;
+	font-size: 4.8rem;
 }
 
 .font-1 {
@@ -87,14 +92,16 @@ h3 {
 }
 
 .passeios {
-	display: flex;
+	width: 100%;
+	display: grid;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .hud-passeio {
 	text-align: center;
-	padding: 40px 20px;
+	padding: 4rem 2rem;
 	border: 1px solid #eeeeee;
 	margin-bottom: 30px;
 	margin-left: auto;
@@ -112,12 +119,14 @@ h3 {
 	font-family: 'Roboto', sans-serif;
 	height: 70px;
 	width: 400px;
-	font-size: 17px;
+	font-size: 1.7rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .hud-passeio h5 {
 	margin-top: 15px;
-	font-size: 32px;
+	font-size: 3.2rem;
 }
 
 .btn-saiba-mais {
@@ -125,14 +134,14 @@ h3 {
 	margin-bottom: 60px;
 	font-weight: bolder;
 	font-family: 'Roboto', sans-serif;
-	font-size: 22px;
+	font-size: 2.2rem;
 }
 
 .cta-area {
-	width: 100%;
+	max-width: 100vw;
 	position: relative;
 	background-size: cover;
-	padding: 9rem 0px;
+	padding: 9rem;
 	margin-top: 100px;
 	background-image: url(cta-bg.png);
 	background-repeat: no-repeat;
@@ -152,16 +161,17 @@ h3 {
 
 .cta-header {
 	width: 40%;
-	margin-left: 160px;
-	text-align: left;
-	font-size: 36px;
+	margin: auto;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 3.6rem;
 }
 
 .cta-text {
 	width: 40%;
 	top: 200px;
-	margin-left: 160px;
-	text-align: justify;
+	margin: auto;
+	text-align: center;
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 }
@@ -171,13 +181,13 @@ h3 {
 	-moz-border-radius: 0px;
 	border-radius: 0px;
 	height: 26px;
-	line-height: 26px;
+	line-height: 2.6rem;
 	color: #ffffff;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	width: 146px;
-	font-size: 18px;
+	font-size: 1.8rem;
 	font-weight: 600;
-	padding: 18px;
+	padding: 1.8rem;
 	background-color: #000000;
 	border: solid #000000 1px;
 	text-decoration: none;
@@ -201,7 +211,6 @@ h3 {
 
 .hud-pacotes {
 	text-align: center;
-	padding: 0px;
 	border: 1px solid #eeeeee;
 	margin-left: auto;
 	margin-right: auto;
@@ -222,12 +231,12 @@ h3 {
 	margin-top: 45px;
 	margin-bottom: 85px;
 	font-family: 'Roboto', sans-serif;
-	font-size: 17px;
+	font-size: 1.7rem;
 }
 
 .hud-pacotes h5 {
 	margin-top: -75px;
-	font-size: 32px;
+	font-size: 3.2rem;
 }
 
 .best-sellers{
@@ -238,7 +247,8 @@ h3 {
 }
 
 .hud-best-sellers{
-	width: auto;
+	width: 100%;
+	height: auto;
 	margin-top: 70px;
 	text-align: center;
 	margin-bottom: 30px;	
@@ -252,36 +262,13 @@ h3 {
 
 .footer-area{
 	background-color: #04091e;
-	display: flex;
-}
-
-.footer-selection{
-	padding-bottom: 80px;
+	text-align: center;
 }
 
 .footer-text {
 	color: #999999;
 	font-family: 'Roboto', sans-serif;
-	
-}
-
-.footer-area a{
-	color: #999999;
-	padding-left: 260%;
-}
-
-.footer-area li{
-	margin-top: 10px;
-	margin-bottom: 5px;
-	margin-left: 5px;
-}
-
-
-.footer-area p{
-	margin-left: 5px;
-	padding-left: 250%;
-	margin-bottom: 5px;
-	margin-top: 5px;
+	text-align: center;
 }
 
 .footer-about{
@@ -289,3 +276,13 @@ h3 {
 	text-align: justify;
 	font-family: 'Roboto', sans-serif;
 }
+@media	(max-width: 1024px){
+	.passeios{
+		display: block;
+	}
+
+	.pacotes{
+		display: block;
+	}
+}
+
